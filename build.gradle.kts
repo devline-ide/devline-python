@@ -12,11 +12,18 @@ dependencies {
 tasks.processResources {
     from("src/extension/extension.json") { rename { "python-extension.json" } }
 }
+val panelInstall = tasks.register<Exec>("panelInstall") {
+    dependsOn(":devline-ide-extensions:frontendInstall")
+    workingDir(projectDir)
+    commandLine("node", rootProject.file("tools/extensions/frontend.mjs").absolutePath, "extension", projectDir.absolutePath)
+    inputs.files("package.json", "package-lock.json")
+    inputs.dir("vendor")
+    outputs.dir(layout.projectDirectory.dir("node_modules/@devline/extension-devkit"))
+}
 val panelBuild = tasks.register<Exec>("panelBuild") {
-    dependsOn(":devline-desktop:webInstall")
+    dependsOn(panelInstall)
     workingDir(rootProject.projectDir)
-    if (System.getProperty("os.name").startsWith("Windows")) commandLine("cmd", "/c", "node_modules\\.bin\\vite.cmd", "build", "--config", project.file("web/vite.config.ts").absolutePath)
-    else commandLine("node_modules/.bin/vite", "build", "--config", project.file("web/vite.config.ts").absolutePath)
+    commandLine("node", rootProject.file("tools/extensions/frontend.mjs").absolutePath, "panel", projectDir.absolutePath)
     inputs.dir("web")
     inputs.dir(rootProject.file("devline-ui-web/src"))
     outputs.dir(layout.buildDirectory.dir("panel"))
