@@ -1,0 +1,13 @@
+html, body, #app { margin: 0; min-height: 100%; background: var(--color-dialog-bg, var(--color-background)); color: var(--color-text); }
+.python-settings {
+  max-width: 760px;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+  font-size: 13px;
+  header p { margin: 0; color: var(--color-text-secondary); font-size: 12px; }
+  &__field { display: grid; gap: 5px; }
+  &__hint { margin: -6px 0 0; color: var(--color-text-secondary); overflow-wrap: anywhere; font-size: 12px; }
+  &__actions { display: flex; align-items: center; gap: 8px; }
+  &__error { color: var(--color-danger, var(--color-text)); margin: 0; }
+}

@@ -1,0 +1,11 @@
+{
+  "title": "Python", "description": "Run project scripts in the integrated terminal.",
+  "scope": "Settings for", "global": "All projects", "project": "Current project", "inherited": "Using settings for all projects",
+  "interpreter": "Interpreter", "auto": "Automatic (.venv, venv, system Python)", "interpreterHelp": "Executable path or command name. An empty value searches the project's .venv and venv, then the system PATH. Python is installed separately.",
+  "resolved": "Detected", "missing": "Python was not found. Install Python or enter an interpreter path.",
+  "directory": "Working directory", "directoryHelp": "Path relative to the project root. Empty means the project root.",
+  "arguments": "Script arguments", "argumentsHelp": "JSON array of strings, for example [\"--quality\", \"high\"]. Arguments are passed directly to Python.",
+  "environment": "Environment variables", "environmentHelp": "JSON object of string values, for example {example}. Saved only on this computer. Python output uses UTF-8.",
+  "save": "Save", "reload": "Reload", "reset": "Reset", "saved": "Saved", "loading": "Loading…", "invalidArguments": "Enter a JSON array of up to 64 strings.", "invalidEnvironment": "Enter a JSON object with up to 64 named string values.", "invalidDirectory": "Enter a relative project directory.", "invalidInterpreter": "The interpreter path is too long or contains invalid characters.",
+  "PYTHON_SETTINGS_ERROR": "Could not read Python settings.", "PYTHON_INVALID_SETTINGS": "Check the settings values.", "FILE_CONFLICT": "Settings changed. Reload before saving.", "PROJECT_CHANGED": "The project changed. Reload the settings.", "NO_PROJECT": "Open a project first.", "failure": "Could not save Python settings."
+}

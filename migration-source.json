@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "extensionId": "devline.python",
+  "sourceRepository": "https://github.com/devline-ide/ozl.devline.ide.git",
+  "sourceCommit": "bd066f6475bc5f3f355facbaaff021aa5e227752",
+  "sourceDirectory": "devline-python",
+  "workingTreeIncluded": true,
+  "files": {
+    "README.md": "3d7dbbeb3a58f5d90c08000ef865bb1ab0d8ad98976f0181b6c412aadee41192",
+    "build.gradle.kts": "5063425c2f1cbd0bad8388a237820ed1342ca0d47b91fb80336d9864901fbbbb",
+    "qa/browser-acceptance.mjs": "ccf4668aa3e8f69ff2e8124b3e673696d10aa21f48806523d8d98bd44677418d",
+    "qa/locale-check.mjs": "839cf1362f4e7e474fe8aca0a91c4fd661b26d1871099b55e7b0897448249e99",
+    "src/extension/extension.json": "76a0d67abd19c9bde56b16260f8c9bd3803596eb5ff64b3a3b9697fa7118e083",
+    "src/main/kotlin/devline/python/PythonExtension.kt": "eff293a3be99f8352abfb447757221d72c4195dd512383de76889e7c3b01ca71",
+    "src/main/kotlin/devline/python/PythonSettings.kt": "272f7460c6c53721d1699c2b57f7be51d5b6fbeb3bae6dfc25c63bc6adb4bbf3",
+    "src/main/resources/devline/python/branding/icon.png": "14efff4b79885e1a0fb8b26e27040ffab813826d67fd9dbd09127abb89c77139",
+    "src/main/resources/devline/python/branding/icon.svg": "79b7b017d6a442f58041e0e233bac6005adc073598bfc82a7707fe746e909ef8",
+    "src/test/kotlin/devline/python/PythonCheck.kt": "4dac6b1b06d9600b626438733bef5fbb4785d37cb4d893aa0dbf3cd21e6055f2",
+    "web/PythonSettings.vue": "b330172a2b7832c9f878049f0566c10d2b6f144ffe2f20bccf336619d4005496",
+    "web/en.json": "32703a1c66eb47998c2adef7206ac6c287c21ed96e6b2eb7fb1baaeb4923abb7",
+    "web/main.ts": "9a77e73915120b8539a9b642f0e57fae67617d0b7cc517457af08032112ca42d",
+    "web/pack.mjs": "ef017ada47e8755a8964ecee453e66ef3cce498ce69f9d1b892e0c5bd2251211",
+    "web/package.json": "ad91c9ac9136396f5249a45e093bab863e9a23646620d911af827986f6180283",
+    "web/ru.json": "157cc9a7091aa4bf0f31610d1597c8f5ebcb350a2f314a732e30190d17297b7d",
+    "web/sdk.ts": "22f486e0b01472d1eac72f5fbc073265295478e55363cac7fd5e7a17b61bac37",
+    "web/settings.scss": "8715f502cd47e588857178a8f4b1ce5240b03a20d331c0a000368b439e48a167",
+    "web/tsconfig.json": "9a5deb71ba0f3fc9264aa82be35921f5174fe5d8ee80be97e52c31460fac7160",
+    "web/vite.config.ts": "fdff54a0be97164eea2d1e647924cbf914ed1e44be663a904eb335ff3a0fca4b"
+  }
+}
