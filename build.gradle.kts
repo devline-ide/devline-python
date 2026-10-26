@@ -15,8 +15,8 @@ tasks.processResources {
 val panelBuild = tasks.register<Exec>("panelBuild") {
     dependsOn(":devline-desktop:webInstall")
     workingDir(rootProject.projectDir)
-    if (System.getProperty("os.name").startsWith("Windows")) commandLine("cmd", "/c", "node_modules\\.bin\\vite.cmd", "build", "--config", "devline-python/web/vite.config.ts")
-    else commandLine("node_modules/.bin/vite", "build", "--config", "devline-python/web/vite.config.ts")
+    if (System.getProperty("os.name").startsWith("Windows")) commandLine("cmd", "/c", "node_modules\\.bin\\vite.cmd", "build", "--config", project.file("web/vite.config.ts").absolutePath)
+    else commandLine("node_modules/.bin/vite", "build", "--config", project.file("web/vite.config.ts").absolutePath)
     inputs.dir("web")
     inputs.dir(rootProject.file("devline-ui-web/src"))
     outputs.dir(layout.buildDirectory.dir("panel"))
