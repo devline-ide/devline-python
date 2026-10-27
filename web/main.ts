@@ -1,11 +1,11 @@
 import { createApp } from 'vue'
 import { createI18n } from 'vue-i18n'
-import { installUI } from '@devline/ui-web'
+import { installUI } from '@devline/ui-web/controls'
 import Settings from './PythonSettings.vue'
 import { sdk } from './sdk'
 import en from './en.json'
 import ru from './ru.json'
-import '@devline/ui-web/style.css'
+import '@devline/ui-web/controls.css'
 import './settings.scss'
 
 void sdk.ready.then(() => {

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, onUnmounted, reactive, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { UIButton, UIInput, UISelect } from '@devline/ui-web'
+import { UIButton, UIInput, UISelect } from '@devline/ui-web/controls'
 import { sdk } from './sdk'
 
 interface Configuration { interpreter: string; directory: string; arguments: string[]; environment: Record<string, string> }
