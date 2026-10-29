@@ -1,3 +1,8 @@
+## Community development
+
+Public extension sources: Apache-2.0. Build and contribute without private IDE access:
+see [CONTRIBUTING.md](CONTRIBUTING.md) and the pinned [SDK](sdk.lock.json).
+
 # Python Runner
 
 Default-enabled, independently packaged IDE extension (`devline.python`). Requires an installed Python 3 interpreter. Python and script dependencies are not downloaded automatically.
@@ -9,6 +14,6 @@ Default-enabled, independently packaged IDE extension (`devline.python`). Requir
 - Global configuration and complete per-project overrides are stored under the host profile's `python-runner/settings.json`. They are never written to the project. Resetting a project override restores global settings.
 - Working directory defaults to the project root; arguments are a JSON string array and environment variables a JSON string map. Executables receive argv directly without a shell. Interactive output remains readable after Stop or extension disable.
 
-Build: `./gradlew.bat :devline-python:extensionArchive`. Verify the real interpreter/PTY, archive install, settings, owner guards and process cleanup with `./gradlew.bat :devline-python:pythonCheck`.
+Community build: `python ci/public_build.py`. Product-integrated Gradle tasks below require the owning Studio checkout.
 
 The shell consumes the generic `fileExtensions` command declaration; Python-specific configuration and interpreter selection live entirely in this module. Host capabilities: `editor.file-commands`, `terminal.programs`, `ui.webviews`, `ui.settings`.

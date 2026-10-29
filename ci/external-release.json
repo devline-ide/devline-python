@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "itemId": "devline.python",
+  "sourceRepository": "devline-ide/devline-python",
+  "sourceRepositoryId": 1434835240,
+  "distributionRepository": "devline-ide/devline-python-releases",
+  "distributionRepositoryId": 1437892641,
+  "ownerId": 328436105,
+  "platforms": [
+    "universal"
+  ],
+  "sourceVisibility": "public"
+}

@@ -7,7 +7,7 @@
   "extension": {
     "schemaVersion": 1,
     "id": "devline.python",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "name": {"en": "Python Runner", "ru": "Запуск Python"},
     "description": {"en": "Run project Python scripts in the integrated terminal.", "ru": "Запуск Python-скриптов проекта во встроенном терминале."},
     "publisher": "DevLine",
